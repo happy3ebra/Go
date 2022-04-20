@@ -1,8 +1,6 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 //type int
 //func expression() bool {
@@ -15,17 +13,9 @@ func main() {
 
 	//var i int
 	//rand.Seed(time.Now().Unix())
-	var i int
-
-	for i := 0; i < 5; i++ {
-		fmt.Println("Hello World", i)
-		if i == 3 {
-			continue
-		}
-		//a := 0
-
-		fmt.Println(i)
-
+	x := [3]int{0, 1, 2}
+	for i := 0; i < len(x); i++ {
+		fmt.Println(x[i])
 	}
-	fmt.Println(i)
+
 }
