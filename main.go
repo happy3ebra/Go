@@ -13,9 +13,9 @@ import (
 
 func main() {
 
-	var i int
+	//var i int
 	//rand.Seed(time.Now().Unix())
-	for i < 5 {
+	for i := 0; i < 5; {
 		//a := 0
 		fmt.Println("Hello World", i)
 		i++
