@@ -2,12 +2,12 @@ package main
 
 import "fmt"
 
-func HelloWorld(name, s string) {
-	fmt.Println("Hello WOrld", name, s)
+func HelloWorld(name ...string) {
+	fmt.Println("Hello WOrld", name)
 }
 
 func main() {
 	name := "Aleksei"
 	s := "Trivium"
-	HelloWorld(name, s)
+	HelloWorld(name, s, "Hello ", "Fack")
 }
