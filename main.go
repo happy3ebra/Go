@@ -21,8 +21,8 @@ func main() {
 	//s := "Trivium"
 	fmt.Println("Введите ваше имя ")
 	var name string
-	n, err := fmt.Scanln(&name)
-	if err != nil {
+	//n, err := fmt.Scanln(&name)
+	if _, err := fmt.Scanln(&name); err != nil {
 
 	}
 
