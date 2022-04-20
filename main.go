@@ -5,15 +5,19 @@ import (
 	"strings"
 )
 
-func HelloWorld(prefix string, name ...string) string {
-	return fmt.Sprintf("%s Hello W0rld %s ", prefix, strings.Join(name, ","))
+func HelloWorld(prefix string, name ...string) (string, error) {
+	return fmt.Sprintf("%s Hello W0rld %v ", prefix, strings.Join(name, ",")), nil
 }
 
 func main() {
 	//name := "Aleksei"
 	//s := "Trivium"
-	fmt.Println(
-		HelloWorld("1", "a", "d", "e"),
-	)
+
+	str, err := HelloWorld("!", "a", "d", "e")
+	if err != nil {
+		fmt.Println("Произошла ошибка", err.Error())
+		return
+	}
+	fmt.Println(str)
 
 }
