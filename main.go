@@ -2,24 +2,23 @@ package main
 
 import (
 	"fmt"
-	"math/rand"
-	"time"
 )
 
 //type int
-func expression() bool {
-	x := rand.Intn(10)
-	return x != 5
-
-}
+//func expression() bool {
+//	x := rand.Intn(10)
+//	return x != 5
+//
+//}
 
 func main() {
 
-	//var a int
-	rand.Seed(time.Now().Unix())
-	for expression() {
+	var i int
+	//rand.Seed(time.Now().Unix())
+	for i < 5 {
 		//a := 0
-		fmt.Println("Hello World")
+		fmt.Println("Hello World", i)
+		i++
 
 	}
 }
