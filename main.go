@@ -1,9 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func HelloWorld(prefix string, name ...string) string {
-	return fmt.Sprintf("%s Hello W0rld %s ", prefix, name)
+	return fmt.Sprintf("%s Hello W0rld %s ", prefix, strings.Join(name, ","))
 }
 
 func main() {
