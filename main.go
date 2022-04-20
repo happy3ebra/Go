@@ -19,8 +19,14 @@ func HelloWorld(prefix string, name ...string) (string, error) {
 func main() {
 	//name := "Aleksei"
 	//s := "Trivium"
+	fmt.Println("Введите ваше имя ")
+	var name string
+	n, err := fmt.Scanln(&name)
+	if err != nil {
 
-	str, err := HelloWorld("", "a", "d", "e")
+	}
+
+	str, err := HelloWorld(">>>>", name)
 	if err != nil {
 		fmt.Println("Произошла ошибка", err.Error())
 		return
