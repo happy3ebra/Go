@@ -9,5 +9,5 @@ func HelloWorld(prefix string, name ...string) {
 func main() {
 	//name := "Aleksei"
 	//s := "Trivium"
-	HelloWorld("1")
+	HelloWorld("1", "a", "d", "e")
 }
