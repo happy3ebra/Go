@@ -18,12 +18,13 @@ func main() {
 	var i int
 
 	for i := 0; i < 5; i++ {
-
+		fmt.Println("Hello World", i)
 		if i == 3 {
 			continue
 		}
 		//a := 0
-		fmt.Println("Hello World", i)
+
+		fmt.Println(i)
 
 	}
 	fmt.Println(i)
